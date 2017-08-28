@@ -9,9 +9,7 @@ CREATE TABLE todos (
 );
 
 ```
-
-
-
+///////////////////////////////////////////////////////
 ```
 id |   title    |         details          | priority |         createdat          | completedat
 ----+------------+--------------------------+----------+----------------------------+-------------
@@ -20,8 +18,6 @@ id |   title    |         details          | priority |         createdat       
 
 ```
 ///////////////////////////////////////////////////////
-
-
 ```
 
 id |   title    |            details            | priority |         createdat          | completedat
@@ -31,9 +27,7 @@ id |   title    |            details            | priority |         createdat  
  3 | some title | here is something i need todo |        2 | 2017-08-28 15:38:15.187581 |
 (3 rows)
 ```
-
-
-//////////////////////
+///////////////////////////////////////////////////////
 ```
 select title from todos where completedAt is null;
    title    
@@ -43,7 +37,7 @@ select title from todos where completedAt is null;
  some title
 (3 rows)
 
-//////////////////////////
+///////////////////////////////////////////////////////
 
 select details from todos where priority <= 3;
            details            
@@ -51,11 +45,8 @@ select details from todos where priority <= 3;
 here is something i need todo
 (1 row)
 ```
-
-/////////////////////////////////
-
-
-
+///////////////////////////////////////////////////////
+```
 todolist=# select * from todos;
  id |   title    |            details            | priority |         createdat          | completedat
 ----+------------+-------------------------------+----------+----------------------------+-------------
@@ -75,11 +66,9 @@ todolist=# select * from todos;
 (3 rows)
 
 todolist=#
-
-
-////////////////////////////////
-
-
+```
+///////////////////////////////////////////////////////
+```
 todolist=# select * from todos;
  id |   title    |            details            | priority |         createdat          |        completedat         
 ----+------------+-------------------------------+----------+----------------------------+----------------------------
@@ -98,3 +87,4 @@ todolist=# select * from todos;
 (2 rows)
 
 todolist=#
+```
