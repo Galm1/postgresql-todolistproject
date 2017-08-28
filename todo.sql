@@ -8,3 +8,14 @@ CREATE TABLE todos (
 );
 
 INSERT INTO todos (title, details, priority, createdAt) VALUES ('first item', 'give Anthony a high five', 5, current_timestamp);
+
+select title from todos where completedAt is null;
+
+select details from todos where priority <= 3;
+
+
+update todos set completedat = current_timestamp where id = 1;
+
+  delete from todos where completedat is not null;
+
+    
